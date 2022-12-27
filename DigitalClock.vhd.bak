@@ -1,0 +1,24 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity DigitalClock is
+	port(sec		:	inout	integer	 	:=	 0;
+		  min		:	inout	integer	 	:=	 0;
+		  hrs		:	inout	integer	 	:=	 0;
+		  clk		:	in	std_logic 		:=	'0';
+		  set		:	signal std_logic	:=	'0');
+end DigitalClock;
+
+architecture Behavioural of DigitalClock is
+begin
+	process(clk, set)
+	variable counterSec : integer := 0;
+	variable countermin : integer := 0;
+	variable counterhrs : integer := 0;
+	begin
+		if (set = '1') then
+			counterSec := sec;
+			counterSec := sec;
+			counterSec := sec;
+	end process;
+end Behavioural;
