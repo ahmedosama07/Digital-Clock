@@ -2,12 +2,12 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity DigitalClock is
-	port(sec		:	out	integer	 	:=	 0;
-		  min		:	out	integer	 	:=	 0;
-		  hrs		:	out	integer	 	:=	 0;
-		  inSec	:	in		integer	 	:=	 0;
-		  inMin	:	in		integer	 	:=	 0;
-		  inHrs	:	in		integer	 	:=	 0;
+	port(sec		:	out	integer range 0 to 60	 	:=	 0;
+		  min		:	out	integer range 0 to 24	 	:=	 0;
+		  hrs		:	out	integer range 0 to 60	 	:=	 0;
+		  inSec	:	in		integer range 0 to 60	 	:=	 0;
+		  inMin	:	in		integer range 0 to 60	 	:=	 0;
+		  inHrs	:	in		integer range 0 to 24	 	:=	 0;
 		  clk		:	in		std_logic 	:=	'0';
 		  set		:	buffer std_logic	:=	'0');
 end DigitalClock;

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DigitalClock
-Tue Dec 27 18:54:53 2022
+Wed Dec 28 20:58:07 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Dec 27 18:54:53 2022       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 28 20:58:07 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; DigitalClock                                ;
 ; Top-level Entity Name              ; DigitalClock                                ;
@@ -52,7 +52,7 @@ https://fpgasoftware.intel.com/eula.
 ;     Total combinational functions  ; 130                                         ;
 ;     Dedicated logic registers      ; 96                                          ;
 ; Total registers                    ; 96                                          ;
-; Total pins                         ; 194                                         ;
+; Total pins                         ; 36                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -192,14 +192,14 @@ https://fpgasoftware.intel.com/eula.
 ;     -- Dedicated logic registers            ; 96        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 194       ;
+; I/O pins                                    ; 36        ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 96        ;
-; Total fan-out                               ; 959       ;
-; Average fan-out                             ; 1.56      ;
+; Total fan-out                               ; 722       ;
+; Average fan-out                             ; 2.42      ;
 +---------------------------------------------+-----------+
 
 
@@ -208,7 +208,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
-; |DigitalClock              ; 130 (130)           ; 96 (96)                   ; 0           ; 0            ; 0       ; 0         ; 194  ; 0            ; |DigitalClock       ; DigitalClock ; work         ;
+; |DigitalClock              ; 130 (130)           ; 96 (96)                   ; 0           ; 0            ; 0       ; 0         ; 36   ; 0            ; |DigitalClock       ; DigitalClock ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -233,7 +233,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 194                         ;
+; boundary_port         ; 36                          ;
 ; cycloneiii_ff         ; 96                          ;
 ;     ENA SCLR          ; 64                          ;
 ;     SCLR              ; 32                          ;
@@ -266,7 +266,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Dec 27 18:54:46 2022
+    Info: Processing started: Wed Dec 28 20:57:54 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DigitalClock -c DigitalClock
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -284,111 +284,32 @@ Warning (13024): Output pins are stuck at VCC or GND
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 96 input pin(s) that do not drive logic
+Warning (21074): Design contains 17 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "inSec[0]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
     Warning (15610): No output dependent on input pin "inSec[1]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
     Warning (15610): No output dependent on input pin "inSec[2]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
     Warning (15610): No output dependent on input pin "inSec[3]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
     Warning (15610): No output dependent on input pin "inSec[4]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
     Warning (15610): No output dependent on input pin "inSec[5]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[6]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[7]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[8]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[9]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[10]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[11]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[12]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[13]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[14]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[15]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[16]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[17]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[18]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[19]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[20]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[21]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[22]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[23]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[24]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[25]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[26]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[27]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[28]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[29]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[30]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
-    Warning (15610): No output dependent on input pin "inSec[31]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 8
     Warning (15610): No output dependent on input pin "inMin[0]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
     Warning (15610): No output dependent on input pin "inMin[1]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
     Warning (15610): No output dependent on input pin "inMin[2]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
     Warning (15610): No output dependent on input pin "inMin[3]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
     Warning (15610): No output dependent on input pin "inMin[4]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
     Warning (15610): No output dependent on input pin "inMin[5]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[6]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[7]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[8]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[9]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[10]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[11]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[12]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[13]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[14]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[15]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[16]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[17]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[18]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[19]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[20]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[21]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[22]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[23]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[24]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[25]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[26]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[27]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[28]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[29]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[30]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
-    Warning (15610): No output dependent on input pin "inMin[31]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 9
     Warning (15610): No output dependent on input pin "inHrs[0]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
     Warning (15610): No output dependent on input pin "inHrs[1]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
     Warning (15610): No output dependent on input pin "inHrs[2]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
     Warning (15610): No output dependent on input pin "inHrs[3]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
     Warning (15610): No output dependent on input pin "inHrs[4]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[5]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[6]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[7]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[8]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[9]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[10]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[11]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[12]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[13]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[14]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[15]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[16]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[17]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[18]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[19]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[20]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[21]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[22]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[23]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[24]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[25]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[26]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[27]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[28]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[29]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[30]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-    Warning (15610): No output dependent on input pin "inHrs[31]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-Info (21057): Implemented 324 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 97 input pins
-    Info (21059): Implemented 97 output pins
+Info (21057): Implemented 166 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 18 input pins
+    Info (21059): Implemented 18 output pins
     Info (21061): Implemented 130 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 104 warnings
-    Info: Peak virtual memory: 4807 megabytes
-    Info: Processing ended: Tue Dec 27 18:54:53 2022
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:16
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
+    Info: Peak virtual memory: 4808 megabytes
+    Info: Processing ended: Wed Dec 28 20:58:07 2022
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:30
 
 
