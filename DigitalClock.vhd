@@ -3,8 +3,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity DigitalClock is
 	port(sec		:	out	integer range 0 to 60	 	:=	 0;
-		  min		:	out	integer range 0 to 24	 	:=	 0;
-		  hrs		:	out	integer range 0 to 60	 	:=	 0;
+		  min		:	out	integer range 0 to 60	 	:=	 0;
+		  hrs		:	out	integer range 0 to 24	 	:=	 0;
 		  inSec	:	in		integer range 0 to 60	 	:=	 0;
 		  inMin	:	in		integer range 0 to 60	 	:=	 0;
 		  inHrs	:	in		integer range 0 to 24	 	:=	 0;

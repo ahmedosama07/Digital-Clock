@@ -48,6 +48,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "min[5]",
+					"strict" : false
+				},
+				{
 					"name" : "hrs[0]",
 					"strict" : false
 				},
@@ -65,10 +69,6 @@
 				},
 				{
 					"name" : "hrs[4]",
-					"strict" : false
-				},
-				{
-					"name" : "hrs[5]",
 					"strict" : false
 				},
 				{
