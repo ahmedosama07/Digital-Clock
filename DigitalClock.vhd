@@ -29,15 +29,15 @@ begin
 			if counterSec >= 59 then
 				counterMin <= counterMin + 1;
 				counterSec <= 0;
-				if counterMin >= 59 then
-					counterHrs <= counterHrs + 1;
-					counterMin <= 0;
-					if counterHrs >= 23 then
-						counterHrs <= 0;
-						counterMin <= 0;
-						counterSec <= 0;
-					end if;
-				end if;
+			end if;
+			if counterMin > 59 then
+				counterHrs <= counterHrs + 1;
+				counterMin <= 0;
+			end if;
+			if counterHrs > 23 then
+				counterHrs <= 0;
+				counterMin <= 0;
+				counterSec <= 0;
 			end if;
 		end if;
 	end process;
