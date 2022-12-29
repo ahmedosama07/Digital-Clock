@@ -23,25 +23,21 @@ begin
 			counterSec <= inSec;
 			counterMin <= inMin;
 			counterHrs <= inHrs;
-			
 			set <= '0';
 		elsif clk 'event and clk = '1' then
 			counterSec <= counterSec + 1;
 			if counterSec >= 59 then
 				counterMin <= counterMin + 1;
 				counterSec <= 0;
-				if counterMin >= 59 then
-					counterHrs <= counterHrs + 1;
-					counterMin <= 0;
-					if counterHrs >= 23 then
-						counterHrs <= 0;
-<<<<<<< HEAD
-=======
-						counterMin <= 0;
-						counterSec <= 0;
->>>>>>> parent of 7e5dca2 (Fixed 24h issue)
-					end if;
-				end if;
+			end if;
+			if counterMin > 59 then
+				counterHrs <= counterHrs + 1;
+				counterMin <= 0;
+			end if;
+			if counterHrs > 23 then
+				counterHrs <= 0;
+				counterMin <= 0;
+				counterSec <= 0;
 			end if;
 		end if;
 	end process;
