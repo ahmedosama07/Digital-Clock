@@ -1,5 +1,9 @@
 Fitter report for DigitalClock
+<<<<<<< HEAD
 Thu Dec 29 13:22:39 2022
+=======
+Wed Dec 28 21:13:47 2022
+>>>>>>> parent of 7e5dca2 (Fixed 24h issue)
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -66,7 +70,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Fitter Status                      ; Successful - Thu Dec 29 13:22:39 2022       ;
+=======
+; Fitter Status                      ; Successful - Wed Dec 28 21:13:47 2022       ;
+>>>>>>> parent of 7e5dca2 (Fixed 24h issue)
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; DigitalClock                                ;
 ; Top-level Entity Name              ; DigitalClock                                ;
@@ -155,8 +163,12 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
+<<<<<<< HEAD
 ;     Processor 2            ;   0.6%      ;
 ;     Processors 3-6         ;   0.6%      ;
+=======
+;     Processors 2-6         ;   0.7%      ;
+>>>>>>> parent of 7e5dca2 (Fixed 24h issue)
 +----------------------------+-------------+
 
 
@@ -1108,8 +1120,13 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X23_Y12 to location X34_Y24
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
+<<<<<<< HEAD
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
 Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
+=======
+Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
+Info (11888): Total time spent on timing analysis during the Fitter is 0.23 seconds.
+>>>>>>> parent of 7e5dca2 (Fixed 24h issue)
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -1117,10 +1134,17 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Info (144001): Generated suppressed messages file D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/output_files/DigitalClock.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
+<<<<<<< HEAD
     Info: Peak virtual memory: 5631 megabytes
     Info: Processing ended: Thu Dec 29 13:22:39 2022
     Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:05
+=======
+    Info: Peak virtual memory: 5632 megabytes
+    Info: Processing ended: Wed Dec 28 21:13:47 2022
+    Info: Elapsed time: 00:00:06
+    Info: Total CPU time (on all processors): 00:00:08
+>>>>>>> parent of 7e5dca2 (Fixed 24h issue)
 
 
 +----------------------------+

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Analysis & Synthesis Status : Successful - Thu Dec 29 13:22:34 2022
+=======
+Analysis & Synthesis Status : Successful - Wed Dec 28 21:13:40 2022
+>>>>>>> parent of 7e5dca2 (Fixed 24h issue)
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : DigitalClock
 Top-level Entity Name : DigitalClock

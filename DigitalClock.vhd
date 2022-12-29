@@ -35,6 +35,11 @@ begin
 					counterMin <= 0;
 					if counterHrs >= 23 then
 						counterHrs <= 0;
+<<<<<<< HEAD
+=======
+						counterMin <= 0;
+						counterSec <= 0;
+>>>>>>> parent of 7e5dca2 (Fixed 24h issue)
 					end if;
 				end if;
 			end if;

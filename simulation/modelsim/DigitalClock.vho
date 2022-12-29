@@ -17,7 +17,11 @@
 -- PROGRAM "Quartus Prime"
 -- VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
 
+<<<<<<< HEAD
 -- DATE "12/29/2022 13:22:45"
+=======
+-- DATE "12/28/2022 21:13:54"
+>>>>>>> parent of 7e5dca2 (Fixed 24h issue)
 
 -- 
 -- Device: Altera EP4CE6E22C6 Package TQFP144
