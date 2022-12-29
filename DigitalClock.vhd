@@ -23,21 +23,20 @@ begin
 			counterSec <= inSec;
 			counterMin <= inMin;
 			counterHrs <= inHrs;
+			
 			set <= '0';
 		elsif clk 'event and clk = '1' then
 			counterSec <= counterSec + 1;
 			if counterSec >= 59 then
 				counterMin <= counterMin + 1;
 				counterSec <= 0;
-			end if;
-			if counterMin > 59 then
-				counterHrs <= counterHrs + 1;
-				counterMin <= 0;
-			end if;
-			if counterHrs > 23 then
-				counterHrs <= 0;
-				counterMin <= 0;
-				counterSec <= 0;
+				if counterMin >= 59 then
+					counterHrs <= counterHrs + 1;
+					counterMin <= 0;
+					if counterHrs >= 23 then
+						counterHrs <= 0;
+					end if;
+				end if;
 			end if;
 		end if;
 	end process;
