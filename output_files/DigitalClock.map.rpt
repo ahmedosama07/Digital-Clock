@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DigitalClock
-Wed Dec 28 21:13:40 2022
+Fri Dec 30 14:42:44 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,15 +43,15 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Dec 28 21:13:40 2022       ;
+; Analysis & Synthesis Status        ; Successful - Fri Dec 30 14:42:44 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; DigitalClock                                ;
 ; Top-level Entity Name              ; DigitalClock                                ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 130                                         ;
-;     Total combinational functions  ; 130                                         ;
-;     Dedicated logic registers      ; 96                                          ;
-; Total registers                    ; 96                                          ;
+; Total logic elements               ; 25                                          ;
+;     Total combinational functions  ; 25                                          ;
+;     Dedicated logic registers      ; 17                                          ;
+; Total registers                    ; 17                                          ;
 ; Total pins                         ; 36                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -176,20 +176,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 130       ;
+; Estimated Total logic elements              ; 25        ;
 ;                                             ;           ;
-; Total combinational functions               ; 130       ;
+; Total combinational functions               ; 25        ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 30        ;
-;     -- 3 input functions                    ; 0         ;
-;     -- <=2 input functions                  ; 100       ;
+;     -- 4 input functions                    ; 5         ;
+;     -- 3 input functions                    ; 2         ;
+;     -- <=2 input functions                  ; 18        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 37        ;
-;     -- arithmetic mode                      ; 93        ;
+;     -- normal mode                          ; 11        ;
+;     -- arithmetic mode                      ; 14        ;
 ;                                             ;           ;
-; Total registers                             ; 96        ;
-;     -- Dedicated logic registers            ; 96        ;
+; Total registers                             ; 17        ;
+;     -- Dedicated logic registers            ; 17        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 36        ;
@@ -197,9 +197,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 96        ;
-; Total fan-out                               ; 722       ;
-; Average fan-out                             ; 2.42      ;
+; Maximum fan-out                             ; 17        ;
+; Total fan-out                               ; 174       ;
+; Average fan-out                             ; 1.53      ;
 +---------------------------------------------+-----------+
 
 
@@ -208,7 +208,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name  ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
-; |DigitalClock              ; 130 (130)           ; 96 (96)                   ; 0           ; 0            ; 0       ; 0         ; 36   ; 0            ; |DigitalClock       ; DigitalClock ; work         ;
+; |DigitalClock              ; 25 (25)             ; 17 (17)                   ; 0           ; 0            ; 0       ; 0         ; 36   ; 0            ; |DigitalClock       ; DigitalClock ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+--------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -218,12 +218,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 96    ;
-; Number of registers using Synchronous Clear  ; 96    ;
+; Total registers                              ; 17    ;
+; Number of registers using Synchronous Clear  ; 17    ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 64    ;
+; Number of registers using Clock Enable       ; 11    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -234,20 +234,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 36                          ;
-; cycloneiii_ff         ; 96                          ;
-;     ENA SCLR          ; 64                          ;
-;     SCLR              ; 32                          ;
-; cycloneiii_lcell_comb ; 131                         ;
-;     arith             ; 93                          ;
-;         2 data inputs ; 93                          ;
-;     normal            ; 38                          ;
+; cycloneiii_ff         ; 17                          ;
+;     ENA SCLR          ; 11                          ;
+;     SCLR              ; 6                           ;
+; cycloneiii_lcell_comb ; 26                          ;
+;     arith             ; 14                          ;
+;         2 data inputs ; 14                          ;
+;     normal            ; 12                          ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 3                           ;
-;         2 data inputs ; 4                           ;
-;         4 data inputs ; 30                          ;
+;         2 data inputs ; 1                           ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 5                           ;
 ;                       ;                             ;
-; Max LUT depth         ; 4.10                        ;
-; Average LUT depth     ; 3.42                        ;
+; Max LUT depth         ; 3.00                        ;
+; Average LUT depth     ; 1.74                        ;
 +-----------------------+-----------------------------+
 
 
@@ -266,7 +267,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Wed Dec 28 21:13:28 2022
+    Info: Processing started: Fri Dec 30 14:42:37 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DigitalClock -c DigitalClock
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 6 of the 6 processors detected
@@ -274,9 +275,13 @@ Info (12021): Found 2 design units, including 1 entities, in source file digital
     Info (12022): Found design unit 1: DigitalClock-Behavioural File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 15
     Info (12023): Found entity 1: DigitalClock File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 4
 Info (12127): Elaborating entity "DigitalClock" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at DigitalClock.vhd(23): signal "inSec" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 23
-Warning (10492): VHDL Process Statement warning at DigitalClock.vhd(24): signal "inMin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 24
-Warning (10492): VHDL Process Statement warning at DigitalClock.vhd(25): signal "inHrs" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 25
+Warning (10492): VHDL Process Statement warning at DigitalClock.vhd(26): signal "inSec" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 26
+Warning (10492): VHDL Process Statement warning at DigitalClock.vhd(27): signal "inMin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at DigitalClock.vhd(28): signal "inHrs" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 28
+Warning (10492): VHDL Process Statement warning at DigitalClock.vhd(29): signal "inSec" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at DigitalClock.vhd(30): signal "inSec" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at DigitalClock.vhd(31): signal "inMin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at DigitalClock.vhd(35): signal "inHrs" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 35
 Warning (10631): VHDL Process Statement warning at DigitalClock.vhd(20): inferring latch(es) for signal or variable "set", which holds its previous value in one or more paths through the process File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 20
 Info (10041): Inferred latch for "set" at DigitalClock.vhd(20) File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 20
 Warning (13024): Output pins are stuck at VCC or GND
@@ -302,14 +307,14 @@ Warning (21074): Design contains 17 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "inHrs[2]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
     Warning (15610): No output dependent on input pin "inHrs[3]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
     Warning (15610): No output dependent on input pin "inHrs[4]" File: D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/DigitalClock.vhd Line: 10
-Info (21057): Implemented 166 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 61 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
     Info (21059): Implemented 18 output pins
-    Info (21061): Implemented 130 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 25 warnings
-    Info: Peak virtual memory: 4805 megabytes
-    Info: Processing ended: Wed Dec 28 21:13:40 2022
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:25
+    Info (21061): Implemented 25 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 29 warnings
+    Info: Peak virtual memory: 4804 megabytes
+    Info: Processing ended: Fri Dec 30 14:42:44 2022
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:18
 
 

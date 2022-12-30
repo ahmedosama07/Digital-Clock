@@ -13,16 +13,33 @@ entity DigitalClock is
 end DigitalClock;
 
 architecture Behavioural of DigitalClock is
-signal counterSec : integer := 0;
-signal counterMin : integer := 0;
-signal counterHrs : integer := 0;
+signal counterSec : integer range 0 to 60 := 0;
+signal counterMin : integer range 0 to 60 := 0;
+signal counterHrs : integer range 0 to 24 := 0;
 begin
 	process(clk, set)
+	variable innercountSec : integer range 0 to 60 := 0;
+	variable innercountMin : integer range 0 to 60 := 0;
+	variable innercountHrs : integer range 0 to 24 := 0;
 	begin
 		if (set = '1') then
-			counterSec <= inSec;
-			counterMin <= inMin;
-			counterHrs <= inHrs;
+			innercountSec := inSec;
+			innercountMin := inMin;
+			innercountHrs := inHrs;
+			if inSec >= 60 then
+				innercountSec := inSec - 60;
+				innercountMin := inMin + 1;
+			end if;
+			if innercountMin >= 60 then
+				innercountMin := innercountMin - 60;
+				innercountHrs := inHrs + 1;
+			end if;
+			if innercountHrs >= 24 then
+				innercountHrs := innercountHrs - 24;
+			end if;
+			counterSec <= innercountSec;
+			counterMin <= innercountMin;
+			counterHrs <= innercountHrs;
 			set <= '0';
 		elsif clk 'event and clk = '1' then
 			counterSec <= counterSec + 1;
