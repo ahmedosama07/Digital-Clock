@@ -19,8 +19,8 @@ signal counterHrs : integer range 0 to 24 := 0;
 begin
 	process(clk, set)
 	variable innercountSec : integer range 0 to 60 := 0;
-	variable innercountMin : integer range 0 to 61 := 0;
-	variable innercountHrs : integer range 0 to 25 := 0;
+	variable innercountMin : integer range 0 to 60 := 0;
+	variable innercountHrs : integer range 0 to 24 := 0;
 	begin
 		if (set = '1') then
 			innercountSec := inSec;
