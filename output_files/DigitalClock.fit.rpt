@@ -1,5 +1,5 @@
 Fitter report for DigitalClock
-Fri Dec 30 14:42:48 2022
+Fri Dec 30 16:18:46 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -66,7 +66,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Fri Dec 30 14:42:48 2022       ;
+; Fitter Status                      ; Successful - Fri Dec 30 16:18:46 2022       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; DigitalClock                                ;
 ; Top-level Entity Name              ; DigitalClock                                ;
@@ -155,7 +155,8 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;   0.4%      ;
+;     Processor 2            ;   0.3%      ;
+;     Processors 3-6         ;   0.3%      ;
 +----------------------------+-------------+
 
 
@@ -1044,7 +1045,7 @@ Info (170189): Fitter placement preparation operations beginning
 Info (170190): Fitter placement preparation operations ending: elapsed time is 00:00:00
 Info (170191): Fitter placement operations beginning
 Info (170137): Fitter placement was successful
-Info (170192): Fitter placement operations ending: elapsed time is 00:00:00
+Info (170192): Fitter placement operations ending: elapsed time is 00:00:01
 Info (170193): Fitter routing operations beginning
 Info (170195): Router estimated average interconnect usage is 0% of the available device resources
     Info (170196): Router estimated peak interconnect usage is 0% of the available device resources in the region that extends from location X23_Y12 to location X34_Y24
@@ -1059,9 +1060,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Info (144001): Generated suppressed messages file D:/Engineering/College/Year 2/First Term/Digital Logic Design/VHDL/Digital Clock/output_files/DigitalClock.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 5632 megabytes
-    Info: Processing ended: Fri Dec 30 14:42:48 2022
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 5627 megabytes
+    Info: Processing ended: Fri Dec 30 16:18:47 2022
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:04
 
 
